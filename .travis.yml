@@ -5,5 +5,5 @@ notification:
 email:
 recipients:
 -gunnarkd@hotmail.com
-on_failure:always
-on_success:never
+on_failure: always
+on_success: never
