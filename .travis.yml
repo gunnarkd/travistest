@@ -1,4 +1,8 @@
 language: java
+
+services:
+-docker
 script:
-mvn install
-mvn test
+-sudo docker run -it -v "$PWD:/repository" debian:testing sh -c "
+	apt-get update &&
+	apt-get install --yes maven && CTEST_OUTPUT_ON_FAILURE=1 mvn install"
