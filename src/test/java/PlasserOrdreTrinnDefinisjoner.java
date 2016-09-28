@@ -7,13 +7,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 /**
  * @author nilstes
  */
 public class PlasserOrdreTrinnDefinisjoner {
     
-    private WebDriver driver = new FirefoxDriver();
+    private WebDriver driver = new HtmlUnitDriver();
     
     @Gitt("^at en bruker putter (\\d+) varer i handlekurven$")
     public void at_en_bruker_putter_varer_i_handlekurven(int arg1) throws Throwable {
